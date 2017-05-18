@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace module04_08.Models
 {
-    class Comment
+    public class Comment
     {
         public int Id { get; set; }
         public string Subject { get; set; }
