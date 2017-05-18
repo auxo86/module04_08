@@ -14,12 +14,14 @@
 <body>
     <div>
         <h1>Get Comments</h1>
-        <ul>
-            @foreach (var item in Model)
-            {
-                <li>@item.Id -- @item.Subject</li>
-            }
+        @*<ul>
+        @foreach (var item in Model)
+        {
+            <li>@item.Id -- @item.Subject</li>
+        }
         </ul>
+        建立partial view _CommentList提供給這個View用*@
+        @Html.Partial("_CommentList")
     </div>
 </body>
 </html>
